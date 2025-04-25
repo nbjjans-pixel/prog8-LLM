@@ -16,7 +16,7 @@ async function initializeApp() {
         temperature: 0.7
     });
 
-    embeddings = new AzureOpenAIEmbeddings({
+    embeddings = new AzureOpenAIEmbeddings({  //gebruik open AI via Azure
         temperature: 0,
         azureOpenAIApiEmbeddingsDeploymentName: process.env.AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME,
         apiVersion: process.env.AZURE_OPENAI_API_VERSION
